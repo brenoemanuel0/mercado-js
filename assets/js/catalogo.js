@@ -91,7 +91,7 @@ console.log("exercicio 4")
 let totalpreco = produtos.reduce((produto, prox) => produto + prox.preco, 0)
 console.log(totalpreco)
 // 5 - Salvar um dado no localStorage e ler o mesmo
-
+console.log("exercicio 5")
 produtos.push({
         nome: "morango 1kg",
         preco: 50.00,
