@@ -1,6 +1,6 @@
 // Create
 const formCadastro = document.getElementById("formCadastro")
-var isEditando = false
+var isEditando = null
 
 // 0 - Colocar tudo isso em um escutador de evento / função
 formCadastro.onsubmit = (event) => {
@@ -27,7 +27,7 @@ formCadastro.onsubmit = (event) => {
     // 4 - usar o .push para colocar os valores nesse json
     // Eu pego a variavel que eu criei no passo 3 e 
     // dou push usando a variavel do passo 2
-    if (isEditando) {
+    if (isEditando != null) {
         produtosLocalStorage[isEditando] = produto
     } else {
         produtosLocalStorage.push(produto)
